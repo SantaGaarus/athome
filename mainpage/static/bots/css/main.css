@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display:ital@1&display=swap');
+body{
+    background: #2d2d2d;
+    font-family: "Playfair+Display";
+    font-weight: 300px;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 70px;
+}
+.mebel_block{
+    display: inline;
+    
+}
+h1,h2,h4,h5,h6{
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+  
+}
+
+.centered{
+    text-align: center;
+}
+a{
+    color:#f85c37
+}
+
+a:hover , a:focus{
+    color:#7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+hr {
+    display: block;
+    height: 1px;
+    border:0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.navbar{
+    font-weight: 800;
+    font-size:14px;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.navbar-inverse{
+   
+    border-color: #2d2d2d;
+    background-color: rgb(27, 27, 27);
+}
+.navbar-inverse .navbar-nav > .active >a{
+    background-color: #ff7878;
+
+}
+
+.navbar-inverse .navbar-brand{
+position:absolute;
+width: 100%;
+left: 0;
+text-align: center;
+margin: -10px;
+color: #aaa;
+font-weight: bolder;
+font-size: 25px;
+letter-spacing: 0px;
+}
+li{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: 360px;
+}
+b  {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0px;
+    color: #aaa;
+    font-weight: bolder;
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+.num{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    margin: 0px;
+    margin-right: -700px;
+    color: #aaa;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.block_link{
+    left: -200px;
+
+}
+.bro{
+    display: none;
+}
+.block_link::after {
+    content: '';
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    opacity: 1;
+    
+}
+.block_link:hover::after{
+    opacity: 1;
+    width: 100%;
+    transition:0.7s ease;
+
+}
+.hehe{
+    position: absolute;
+    min-width: 0px;
+}
+.odin_block{
+    display: inline-block;
+    margin-left:130px;
+
+}
+.odin_block_img{
+    width:400px ; 
+    border-radius: 20px;
+
+    border: 2px solid #848484; /* Рамка вокруг фотографии */
+    margin-right: 50px; /* Отступ справа */
+    margin-bottom: 70px;/* Отступ снизу */
+}
+.d-name{
+    display: flex;
+    font-size: 15px;
+    margin-left: 170px;
+    margin-top: -60px;
+    color:rgb(155, 155, 155)
+}
+
+.dd-name{
+    display: flex;
+    font-size: 15px;
+    margin-left: 150px;
+    margin-top: -60px;
+    color:rgb(155, 155, 155)
+}
+/*--------------------------SLIDER---------------------------*/
+.slider{
+    width: 1900px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.slides{
+    left: 500px;
+    width: 500%;
+    height: 500px;
+    display: flex;
+
+}
+.slides input{
+    display:none;
+
+}
+.slide{
+    position: relative;
+    width: 20%;
+    transition: 1s;
+}
+.slide img{
+    width: 1900px;
+    position: relative;;
+}
+.navigation-manual{
+    position: absolute;
+    width: 1850px;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #555;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right:40px;
+}
+.manual-btn:hover{
+    background: #f85c37;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+.fa-phone{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------SLIDER---------------------------*/
+a{
+    color: rgb(145, 145, 145);
+}
+
+button{
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    color: #7c7c7c;
+    margin-top: 10px;
+}
+.hidden_block{
+    background-color: rgb(27, 27, 27);
+    margin-left: 70px;
+    width: 360px;
+    z-index: 1;
+    display: flex;
+
+    position: fixed;
+    
+}
+.hidden_link1 ,.hidden_link2,.hidden_link3,.hidden_link4{
+    display: flex;
+    color: #aaa;
+    position: fixed;
+    top:0;
+}
+
+.foot-black{
+  
+    background-color: #555;
+
+  }
+
+.roras{
+
+    position: absolute;
+    margin-top: 0px;
+    width: 300px;
+    display: flex;
+    margin-right: 200px;
+
+}
+.text_input{
+    width: 0px;
+    display: none;
+    position: absolute;
+    color:#848484;
+    margin-top: -37px;
+    margin-left: 1350px;
+    border-radius: 20px;
+    border-top: #2d2d2d;
+    border-style: double;
+    background-color: #555;
+    border-color: #aaaaaa;
+}
+
+/*====================================Mebel=========================================*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.price_input .input-min,.price_input .input-max{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.price_to_centre{
+    margin-left: 75px;
+}
+.slider_price{
+    height: 10px;
+    width:200px;
+    margin-top:20px;
+    border-radius: 5px;
+    border-style: solid;
+    position:relative;
+}
+.slider_price .progress{
+    background-color: rgba(255, 255, 255, 0.519);
+    height: 6px;
+    position: absolute;
+    border-radius: 5px;
+    left: 0%;
+    right: 0%;
+
+}
+
+.range-input{
+    position: relative;
+    width: 80%;
+}
+.range-input input{
+    position: absolute;
+    top: 5px;
+    margin-top: -12px;
+    width:100%;
+    height: 5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    
+}
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    -webkit-appearance:none;
+    pointer-events: auto;
+    background: rgb(196, 196, 196);
+}
+input[type="checkbox"]{
+
+    filter: invert(80%);
+
+}   
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    color:#848484;
+    border-radius: 20px;
+    border-top: #2d2d2d;
+    width:100px;
+    border-style: none;
+    background-color: #555;
+    border-color: #aaaaaa;
+  }
+.mebel_block{
+    display: inline-block;
+    margin-left:130px;
+    height: 380px;
+}
+.mebel_blockk{
+    display: inline-block;
+    margin-left:50px;
+    height: 380px;
+}
+.price_input{
+    margin-left: 50px;
+    margin-top: -28px;
+
+
+}
+.searchAAA{
+    margin-left:150%;
+
+
+}
+.searchAAAA{
+    margin-left:50px;
+
+
+}
+.filter_block{
+    height: auto;
+    margin-top: 50px;
+    position:absolute;
+    margin-left: 80%;
+    width: 100%;
+    max-width: 300px;
+    order: 2;
+    background-color: rgb(36, 36, 36);
+    position:fixed;
+}
+.mebel_img{
+    width:400px ; 
+    border-radius: 20px;
+    border: 5px solid #595959; /* Рамка вокруг фотографии */
+    margin-right: 50px; /* Отступ справа */
+    margin-bottom: 70px;/* Отступ снизу */
+}
+.mebel_img:hover{
+border: 1px solid #ffffff;
+
+}
+.mebel_text{
+    display: flex;
+    font-size: 15px;
+    margin-left:auto;
+    margin-top: -50px;
+    color:rgb(255, 255, 255)
+}
+.korz {
+    display: block;
+    margin-left: 280px;
+    width: 113px;
+    height: 40px;
+    color: #747474;
+    border: 1px solid #121212;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'robotobold';
+    border-radius: 40px;
+    text-decoration: none;
+    align-self: flex-end;
+}
+.korz:hover{
+    color: #040404;
+    border: 1px solid #ffffff;
+    background-color: #757575;
+}
+/*====================================Mebel=========================================*/
+@media screen and (max-width:1680px) {
+    .block_link{
+        left: -200px;
+    }   
+
+    .slider{
+        width: 1700px;
+
+
+    }
+    .slide img{
+        width: 1700px;
+
+    }
+    .navigation-manual{
+        width: 1700px;
+
+    
+    
+    }
+
+}
+@media screen and (max-width:1366px) {
+    .block_link{
+        left: -90px;
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .num{
+        left: -450px;
+ }
+}
+@media screen and (max-width:1280px) {
+    .block_link{
+        left: -40px;
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .slider{
+        width: 1280px;
+        height: 200px;
+
+    }
+    .slide img{
+        width: 1280px;
+    }
+    .navigation-manual{
+        width: 1280px;
+    
+    }
+}
+@media screen and (max-width:1176px) {
+        .slider{
+            width: 1130px;
+
+    
+        }
+        .slide img{
+            width: 1130px;
+        }
+        .navigation-manual{
+            width: 1130px;
+        
+        }
+    }
+@media screen and (max-width:1024px) {
+        .slider{
+            width: 1000px;
+
+    
+        }
+        .slide img{
+            width: 1000px;
+        }
+        .navigation-manual{
+            width: 1000px;
+        
+        }
+
+}@media screen and (max-width:990px) {
+
+    .num{
+        font-size: 0;
+        left: -4000px;
+    }
+
+
+}
+@media screen and (max-width:800px) {
+    .slider{
+        width: 780px;
+
+
+    }
+    .slide img{
+        width: 780px;
+    }
+    .navigation-manual{
+        width: 780px;
+    
+    }
+}
+@media screen and (max-width:768px) {
+    .fa-phone{
+        display:block;
+        font-size: 50px;
+      
+    }
+    .navbar{
+        font-weight: 800px;
+        font-size:14px;
+        padding-top:15px;
+        padding-bottom: 120px;
+    }
+    .slider{
+        height: 200px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .bro {
+        display: inline;
+    }
+
+    .navbar-inverse .navbar-brand{
+
+        font-size: 50px;
+        margin-top: 10px;
+        }
+        b{
+        font-size: 25px;
+        margin-top: 18px;
+        }
+}
+@media screen and (max-width:500px){
+    .slider{
+        width: 550px;
+      
+    }
+    .slide img{
+        width: 550px;
+    }
+    .navigation-manual{
+        width: 550px;
+    }
+    
+
+
+}
+
